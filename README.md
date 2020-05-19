@@ -1,26 +1,19 @@
-## # CISC374 Spring 2020 Educational Games
+# CISC374 Spring 2020 Educational Games
 
+{% for project in site.data.s20games %}
 
-## Chemistry Platformer
-## To recycle or not to recycle?
-## Code Warrior
-## Woolgathering
-## Flight of the Spotted Lanternfly
-## Object Grind
-## Time Commander
-## NaCl/NaOH The base is under a salt
-## A Calculated Assualt
-## Car Garage Management
-## If You Give a Dragon Economics (He’s Going to Want Some Stocks)
-## Journey West
-## Agriculture Computing Game
-## Spanish Shopping Expedition
-## Camo Caper
-## Type Warriors: Unleashed
-## Math Magician
-## Asymptotic Explorer
-## AngelsMaster
-## SortingHat
-## Shark Evolution
-## Coding Platformer
-## Prince of Piano
+## {{ project.Name }}
+
+<img src="screenshots/{{ project.Filename }}_small.png">
+
+<p>Coded by {{ project.Coders }}.</p>
+    
+<strong><a href="{{ project.Link }}">Play</a></strong>
+
+<p>{{ project.Pitch }}</p>
+
+<a href="{{ project.EGDD }}">[EGDD]</a>
+
+<a href="{{ project.Youtube }}">[Youtube]</a>
+
+{% endfor %}
