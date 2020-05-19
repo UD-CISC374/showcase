@@ -5,10 +5,17 @@ title: CISC374 Showcase
 
 <h1>CISC374 Spring 2020 Educational Games</h1>
 
+Jump to:
+<ul>
+{% for project in site.data.s20games %}
+    <li><a href="#{{ project.Key }}">{{ project.Name }}</a></li>
+{% endfor %}
+</ul>
+
 <table>
 {% for project in site.data.s20games %}
 <tr>
-<td colspan=2><h2>{{ project.Name }}</h2></td>
+<td colspan=2><h2 name="{{ project.Key }}" id="{{ project.Key }}">{{ project.Name }}</h2></td>
 </tr>
 
 <tr>
