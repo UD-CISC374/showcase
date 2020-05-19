@@ -8,11 +8,8 @@
     <img src="screenshots/{{ project.Key }}_small.png">
 </a>
 
-{{ project.Key }}
-
-<p>Coded by {{ project.Coders }}.</p>
-
-<p>{{ project.Pitch }}</p>
+<p>Coded by {{ project.Coders }}.<br>
+{{ project.Pitch }}</p>
 
 <p>
 <strong><a href="{{ project.Link }}">Play</a></strong>, 
