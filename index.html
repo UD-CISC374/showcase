@@ -15,13 +15,16 @@ Jump to:
 <table>
 {% for project in site.data.s20games %}
 <tr>
-<td colspan=2><h2 name="{{ project.Key }}" id="{{ project.Key }}">{{ project.Name }}</h2></td>
+<td colspan=2 style='border-bottom: 0px'>
+    <h2 name="{{ project.Key }}" id="{{ project.Key }}">{{ project.Name }}</h2>
+</td>
 </tr>
 
 <tr>
 
 <td width="60%">
-<p>Coded by {{ project.Coders }}.<br>
+<p><em>Coded by {{ project.Coders }}</em><br>
+Learning Domain: {{ project.Domain }}<br>
 {{ project.Pitch }}
 <ul>
     <li><strong><a href="{{ project.Link }}">Play Online</a></strong></li>
