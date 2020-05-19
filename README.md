@@ -4,18 +4,20 @@
 
 ## {{ project.Name }}
 
-<img src="screenshots/{{ project.Filename }}_small.png">
+<a href="{{ project.Link }}" target=_blank>
+    <img src="screenshots/{{ project.Key }}_small.png">
+</a>
 
-{{ project.Filename }}
+{{ project.Key }}
 
 <p>Coded by {{ project.Coders }}.</p>
-    
-<strong><a href="{{ project.Link }}">Play</a></strong>
 
 <p>{{ project.Pitch }}</p>
 
-<a href="{{ project.EGDD }}">[EGDD]</a>
-
+<p>
+<strong><a href="{{ project.Link }}">Play</a></strong>, 
+<a href="{{ project.EGDD }}">[EGDD]</a>, 
 <a href="{{ project.Youtube }}">[Youtube]</a>
+</p>
 
 {% endfor %}
