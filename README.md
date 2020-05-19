@@ -4,7 +4,9 @@
 
 ## {{ project.Name }}
 
-<img src="screenshots/{{ project.filename }}_small.png">
+<img src="screenshots/{{ project.Filename }}_small.png">
+
+{{ project.Filename }}
 
 <p>Coded by {{ project.Coders }}.</p>
     
